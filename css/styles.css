@@ -1,178 +1,81 @@
-/* Reset Default */
-
+/* Glogal styles  */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
     list-style-type: none;
-    /* border: 1px solid #eee; */
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
-
-html, body, .container {
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-}
-
-.container {
-    padding: 14px 24px;
-}
-
-li {
+ul li {
     display: inline-block;
+    margin: 0px 10px 0px 0px;
 }
-
-header {
-    overflow: hidden;
+.wrapper {
+    padding: 24px 34px;
 }
-
-nav {
-    /* display: inline-block; */
-    /* border: 1px solid red; */
-    float: right;
-    clear: both;
-    overflow: hidden;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
-
-nav li {
-    padding: 7px;
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
-
-nav li a {
-    color: #555;
-}
-
-.toright a {
-    /* border: 1px solid red; */
-    color: #444;
-    /* text-align: center; */
-    margin: 10px auto;
-    padding: 10px;
-    
-}
-
-.toright a img {
-    /* border: 1px solid blue; */
-    margin-top: 0px;
-    width: 30px;
-    height: 30px;
-    
-}
-
-
-
-main {
-    width: 500px;
-    margin: 74px auto;
-    /* border: 1px solid red; */
-}
-
-main div {
-    margin: 5px auto;
+section {
     text-align: center;
 }
 
-.entry {
+
+/* Main section */
+.search-entry {
     position: relative;
+    /* width: 45%; */
+    margin: 10px auto;
+}
+form div {
+    margin: 50px;
+}
+#entry-field {
     width: 100%;
-    padding: 0;
-    /* border: 1px solid blue; */
-}
-
-@media only screen and (max-width: 400px){
-    main {
-        width: 90%;
-        margin: 74px auto;
-    }
-
-    .entry input {
-        width: 100%;
-        padding: 14px;
-        border: 1px solid #ddd;
-        border-radius: 50px;
-        margin: 0;
-    }
-}
-
-.entry input {
-    width: 500px;
-    padding: 14px;
-    border: 1px solid #ddd;
+    padding: 14px 20px;
     border-radius: 50px;
-    margin: 0;
+    border: 1px solid lightgray;
 }
-
-.mag {
+.search-icon, .microphone-icon {
     position: absolute;
-    left: 18px;
-    top: 8px;
+    top: 5.9px;
 }
-
-.mic {
-    position: absolute;
-    right: 18px;
-    top: 8px;
+.search-icon {
+    left: 13px;
 }
-
-.buttons input {
-    width: 140px;
-    padding: 10px;
-    margin: 10px;
-    background-color: #eee;
+.microphone-icon {
+    right: 13px;
+}
+.search-buttons button {
+    padding: 10px 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
     color: #555;
-    border: 0px;
+    background-color: #f2f2f2;
 }
-
-.language li {
-    margin: 5px;
+.search-buttons button:hover {
+    border: 1px solid #ddd;
+    background-color: #fff;
 }
-
-.language span {
-    color: #555;
-    font-size: 14px;
-}
-
-.language li a {
-    color: royalblue;
-    font-size: 14px;
-}
-
-
+/* Footer section */
 footer {
     width: 100%;
     position: fixed;
-    bottom: 0px;
-    background-color: #eee;
-    padding: 0px;
-    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    background-color: #f2f2f2;
 }
-
 footer a {
-    color: #555;
+    color: gray;
 }
-
-footer p, div {
-    margin: 0px;
-    padding: 10px 30px;
-}
-
-.links {
+footer:first-child div, footer:last-child div {
     border-top: 1px solid #ddd;
-}
-
-.links ul li {
-    margin: 0px 30px 0px 0px;
-}
-
-.toright {
-    float: right;
-    clear: both;
-}
-
-
-.toleft {
-    display: inline-block;
-    /* float: left; */
-    /* clear: both; */
+    padding: 12px 36px;
 }
